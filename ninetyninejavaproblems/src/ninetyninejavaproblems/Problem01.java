@@ -2,6 +2,13 @@ package ninetyninejavaproblems;
 
 import java.util.List;
 
+/*
+ * P01 (*) Find the last box of a list.
+ Example:
+ * (my-last '(a b c d))
+ (D)
+ * 
+ */
 public class Problem01 {
 
 	public String getLastElementDirect(List<String> list) {

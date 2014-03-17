@@ -2,6 +2,15 @@ package ninetyninejavaproblems;
 
 import java.util.List;
 
+/*
+ * 
+ * P02 (*) Find the last but one box of a list.
+ Example:
+ * (my-but-last '(a b c d))
+ (C)
+
+ */
+
 public class Problem02 {
 
 	public String getLastButOneElementDirect(List<String> list) {

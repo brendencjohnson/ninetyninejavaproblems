@@ -9,11 +9,20 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * P03 (*) Find the K'th element of a list.
+ The first element in the list is number 1.
+ Example:
+ * (element-at '(a b c d e) 3)
+ C
+ * 
+ */
+
 @RunWith(JUnit4.class)
 public class Problem03Test {
 
 	@Test
-	public void testWithListDirect() {
+	public void test_find_kth_element_direct() {
 		List<String> list = Arrays.asList("A", "B", "C", "D", "E");
 		int element = 3;
 		String expectedResult = "C";
@@ -25,7 +34,7 @@ public class Problem03Test {
 	}
 
 	@Test
-	public void testWithListIterative() {
+	public void test_find_kth_element_iterative() {
 		List<String> list = Arrays.asList("A", "B", "C", "D", "E");
 		int element = 3;
 		String expectedResult = "C";
@@ -37,7 +46,7 @@ public class Problem03Test {
 	}
 
 	@Test
-	public void testWithListDeclarative() {
+	public void test_find_kth_element_dec() {
 		List<String> list = Arrays.asList("A", "B", "C", "D", "E");
 		int element = 3;
 		String expectedResult = "C";

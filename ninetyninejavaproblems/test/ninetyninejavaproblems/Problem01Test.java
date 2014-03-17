@@ -10,11 +10,20 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ *
+ * P01 (*) Find the last box of a list.
+ Example:
+ * (my-last '(a b c d))
+ (D)
+ * 
+ */
+
 @RunWith(JUnit4.class)
 public class Problem01Test {
 
 	@Test
-	public void testWithEmptyListDirect() {
+	public void test_find_last_with_empty_list_direct() {
 		Problem01 problem = new Problem01();
 		String result = problem.getLastElementDirect(null);
 
@@ -22,7 +31,7 @@ public class Problem01Test {
 	}
 
 	@Test
-	public void testWithListDirect() {
+	public void test_find_last_direct() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "D";
 
@@ -33,7 +42,7 @@ public class Problem01Test {
 	}
 
 	@Test
-	public void testWithEmptyListIterative() {
+	public void test_find_last_with_empty_list_iterative() {
 		Problem01 problem = new Problem01();
 		String result = problem.getLastElementIterative(null);
 
@@ -41,7 +50,7 @@ public class Problem01Test {
 	}
 
 	@Test
-	public void testWithListIterative() {
+	public void test_find_last_iterative() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "D";
 
@@ -52,7 +61,7 @@ public class Problem01Test {
 	}
 
 	@Test
-	public void testWithEmptyListDeclarative() {
+	public void test_find_last_with_empty_list_declarative() {
 		Problem01 problem = new Problem01();
 		String result = problem.getLastElementDeclarative(null);
 
@@ -60,7 +69,7 @@ public class Problem01Test {
 	}
 
 	@Test
-	public void testWithListDeclarative() {
+	public void test_find_last_declarative() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "D";
 

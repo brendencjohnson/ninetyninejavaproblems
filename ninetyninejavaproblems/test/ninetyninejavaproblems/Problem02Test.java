@@ -9,11 +9,20 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * 
+ * P02 (*) Find the last but one box of a list.
+ Example:
+ * (my-but-last '(a b c d))
+ (C)
+
+ */
+
 @RunWith(JUnit4.class)
 public class Problem02Test {
 
 	@Test
-	public void testWithListDirect() {
+	public void test_find_last_but_one_direct() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "C";
 
@@ -24,7 +33,7 @@ public class Problem02Test {
 	}
 
 	@Test
-	public void testWithListIterative() {
+	public void test_find_last_but_one_iterative() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "C";
 
@@ -35,7 +44,7 @@ public class Problem02Test {
 	}
 
 	@Test
-	public void testWithListDeclarative() {
+	public void test_find_last_but_one_declarative() {
 		List<String> list = Arrays.asList("A", "B", "C", "D");
 		String expectedResult = "C";
 
