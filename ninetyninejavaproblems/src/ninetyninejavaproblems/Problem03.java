@@ -13,16 +13,16 @@ import java.util.List;
 
 public class Problem03 {
 
-	public String getKthElementDirect(List<String> list, int element) {
-		String result = null;
+	public <T> T getKthElementDirect(List<T> list, int element) {
+		T result = null;
 		if (null != list && list.size() > 0) {
 			result = list.get(element - 1);
 		}
 		return result;
 	}
 
-	public String getKthElementIterative(List<String> list, int element) {
-		String result = null;
+	public <T> T getKthElementIterative(List<T> list, int element) {
+		T result = null;
 		if (null != list && list.size() > 0) {
 			for (int i = 0; i < element; i++) {
 				result = list.get(i);
@@ -32,7 +32,7 @@ public class Problem03 {
 
 	}
 
-	public String getKthElementDeclarative(List<String> list, int element) {
+	public <T> T getKthElementDeclarative(List<T> list, int element) {
 		if (null == list || list.size() == 0) {
 			return null;
 		}

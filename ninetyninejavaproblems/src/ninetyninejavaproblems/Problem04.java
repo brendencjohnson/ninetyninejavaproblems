@@ -9,19 +9,19 @@ import java.util.List;
 
 public class Problem04 {
 
-	public int howManyElementsDirect(List<String> list) {
+	public <T> int howManyElementsDirect(List<T> list) {
 		return list.size();
 	}
 
-	public int howManyElementsImperative(List<String> list) {
+	public <T> int howManyElementsImperative(List<T> list) {
 		int result = 0;
-		for (String element : list) {
+		for (T element : list) {
 			result++;
 		}
 		return result;
 	}
 
-	public int howManyElementsDeclarative(List<String> list) {
+	public <T> int howManyElementsDeclarative(List<T> list) {
 		if (list.isEmpty()) {
 			return 0;
 		} else {

@@ -9,7 +9,9 @@ import org.junit.runners.Suite;
 	Problem01Test.class, 
 	Problem02Test.class,
 	Problem03Test.class,
-	Problem04Test.class})
+	Problem04Test.class,
+	Problem05Test.class,
+	Problem06Test.class})
 public class AllTests {
 
 }

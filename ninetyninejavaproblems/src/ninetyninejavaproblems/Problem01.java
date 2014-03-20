@@ -11,25 +11,25 @@ import java.util.List;
  */
 public class Problem01 {
 
-	public String getLastElementDirect(List<String> list) {
-		String result = null;
+	public <T> T getLastElementDirect(List<T> list) {
+		T result = null;
 		if (null != list && list.size() > 0) {
 			result = list.get(list.size() - 1);
 		}
 		return result;
 	}
 
-	public String getLastElementIterative(List<String> list) {
-		String result = null;
+	public <T> T getLastElementIterative(List<T> list) {
+		T result = null;
 		if (null != list && list.size() > 0) {
-			for (String element : list) {
+			for (T element : list) {
 				result = element;
 			}
 		}
 		return result;
 	}
 
-	public String getLastElementDeclarative(List<String> list) {
+	public <T> T getLastElementDeclarative(List<T> list) {
 		if (null == list || list.size() == 0) {
 			return null;
 		}

@@ -13,8 +13,8 @@ import java.util.List;
 
 public class Problem02 {
 
-	public String getLastButOneElementDirect(List<String> list) {
-		String result = null;
+	public <T> T getLastButOneElementDirect(List<T> list) {
+		T result = null;
 		int size = list.size();
 		if (null != list && size > 0) {
 			result = list.get(size - 2);
@@ -22,12 +22,12 @@ public class Problem02 {
 		return result;
 	}
 
-	public String getLastButOneElementIterative(List<String> list) {
-		String result = null;
-		String previous = null;
-		String current = null;
+	public <T> T getLastButOneElementIterative(List<T> list) {
+		T result = null;
+		T previous = null;
+		T current = null;
 		if (null != list && list.size() > 0) {
-			for (String element : list) {
+			for (T element : list) {
 				previous = current;
 				current = element;
 			}
@@ -37,7 +37,7 @@ public class Problem02 {
 		return result;
 	}
 
-	public String getLastButOneElementDeclarative(List<String> list) {
+	public <T> T getLastButOneElementDeclarative(List<T> list) {
 		if (null == list || list.size() == 0) {
 			return null;
 		}
